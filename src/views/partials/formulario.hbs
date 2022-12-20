@@ -1,0 +1,71 @@
+<div>
+
+    <nav class="navbar navbar-expand-lg position-relative w-50 text-center bg-info bg-gradient mb-5">   
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            {{#if username}}
+                <h4 style="color:cornflowerblue">Bienvenido {{username}}</h4>
+            <li>
+                <a class="btn btn-danger" href="/api/logout">Deslogear</a>   
+            </li> 
+            {{else}}
+            <li class="nav-item">
+                <a class="nav-link" href="/api/signup">Register</a>   
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/api/login">Login</a> 
+            </li>
+            {{/if}}
+        </ul>
+    </nav>
+
+    <form action="/productos" method="POST" enctype="multipart/form-data">
+        Titulo: <input type="text" name="title" id="title" /> <br/>
+        Precio: <input type="number" name="price" id="price" /> <br/>
+        Archivo: <input type="file" name="myfile" id="myfile" /> <br/>
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="/productos">Ir a productos</a>
+
+    <div class="bg-secondary w-50 mt-5">
+        <h2>Lista de productos</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Portada</th>
+                </tr>
+            </thead>
+            <tbody id="products"></tbody>
+        </table>
+    </div>
+
+    <div class="bg-warning w-50 mt-5">
+        <h2>Centro de Mensajes</h2>
+        <form class="form" onsubmit="return addMessage(this)">
+            <div class="input-group w-75 mx-auto" onclick="return validation()">
+                <div class="input-group w-75 mx-auto">
+                    <div class="input-group-text">@</div>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Ingrese email"> 
+                </div>
+                <div class="input-group w-75 mx-auto">
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Ingrese nombre">
+                </div>
+                <div class="input-group w-75 mx-auto">
+                    <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Ingrese apellido">
+                </div>
+                <div class="input-group w-75 mx-auto">
+                    <input class="form-control" type="number" name="age" id="age" placeholder="Ingrese edad">
+                </div>
+                <div class="input-group w-75 mx-auto">
+                    <input class="form-control" type="text" name="alias" id="alias" placeholder="Ingrese Alias">
+                </div>
+            </div>
+            <div id="messages" class="mt-5 mb-"></div>
+            <div class="input-group w-75 mx-auto">
+                <input class="form-control" type="text" name="message" id="message" placeholder="Ingrese su mensaje" disabled>
+                <button class="btn btn-primary ms-3" type="submit" name="btnMessage" id="btnMessage" disabled>Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>

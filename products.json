@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1066ddd2-a396-4919-849b-289eaf957917",
+        "title": "Sopa",
+        "price": "295.00",
+        "thumbnail": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/372.jpg"
+    },
+    {
+        "id": "18697900-7775-4a1e-b7ce-a7ab8808ff8c",
+        "title": "Pollo",
+        "price": "379.00",
+        "thumbnail": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/360.jpg"
+    },
+    {
+        "id": "192f8a50-22f0-4627-8c5e-eb8bda63c459",
+        "title": "Mesa",
+        "price": "565.00",
+        "thumbnail": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/520.jpg"
+    },
+    {
+        "id": "4d0e9d48-5f6a-42df-bc8c-97c8d26cc561",
+        "title": "Silla",
+        "price": "845.00",
+        "thumbnail": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/834.jpg"
+    },
+    {
+        "id": "e4a40415-ef33-4f4f-9444-f9622e200940",
+        "title": "Camiseta",
+        "price": "901.00",
+        "thumbnail": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/506.jpg"
+    }
+]

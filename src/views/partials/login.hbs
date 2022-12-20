@@ -1,0 +1,18 @@
+<div class="w-50">
+        <h3>Log-in</h3>
+        <form action="/api/login" method="POST">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Email:</label>
+                <input type="email" name="username" id="username" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Contraseña:</label>
+                <input type="password" name="password" id="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <a href="/" class="btn btn-primary">Volver</a>
+        </form>
+    {{#if false}}
+        <h3 style="background-color: red; color: white; width: 270px;">{{error}}</h3>
+    {{/if}}
+</div>
